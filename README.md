@@ -2,110 +2,114 @@
 
 ## Overview
 
-This project showcases the implementation of a complete live streaming and virtual classroom system integrated into an existing educational platform.
+This project showcases the implementation of a complete live streaming and virtual classroom solution integrated into an existing educational platform.
 
-The objective was to extend the platform by adding a scalable, production-ready live classroom solution that allows teachers to conduct online lessons with real-time communication, lecture recording, and cloud storage while maintaining excellent performance and user experience.
+The goal was to extend the platform with a production-ready live classroom system that enables teachers to conduct online lessons with real-time communication, lecture recording, and cloud storage while maintaining excellent performance and scalability.
 
-> **Note:** The source code is not included because the project was developed for a private client under a confidentiality agreement.
+**Live Platform:**
+https://bakr-taher.com/
+
+> **Note:** The source code is not included because this project was developed for a private client under a confidentiality agreement.
 
 ---
 
-# Features
+## Project Highlights
 
 - Professional virtual classroom integration
-- Teacher and Student live interfaces
-- Real-time live sessions
+- Live streaming using WebRTC & LiveKit
+- Teacher & Student dedicated interfaces
 - Secure session management
 - Teacher camera & microphone support
 - Screen sharing
-- Live Chat
+- Live chat
 - Automatic lecture recording
-- Cloud storage integration
-- User permissions management
-- Responsive UI
-- Optimized performance
-- Scalable infrastructure
+- Cloud storage integration (Cloudflare R2)
+- Scalable server architecture
+- Optimized backend performance
+- Responsive UI for desktop and mobile
 
 ---
 
-# Technology Stack
+## Technologies Used
 
 ### Frontend
-
 - React
 - TypeScript
 
 ### Backend
-
 - Node.js
 - Express.js
 
 ### Database
-
 - PostgreSQL
 
 ### Live Streaming
-
 - LiveKit
 - WebRTC
 
-### Cloud Storage
-
+### Storage
 - Cloudflare R2
 
 ### Infrastructure
-
 - Docker
 - Hetzner VPS
 
 ---
 
-# System Architecture
+## Architecture
 
-The live streaming infrastructure was designed to support multiple concurrent classrooms while maintaining stability and low resource consumption.
+The system consists of three main components:
 
-Main Components:
+- Frontend application
+- Backend API
+- Dedicated LiveKit media server
 
-- React Frontend
-- Node.js API
-- PostgreSQL Database
-- LiveKit Server
-- LiveKit Egress
-- Cloudflare R2 Storage
+Recorded lectures are automatically uploaded to Cloudflare R2, allowing scalable cloud storage without increasing server disk usage.
 
 ---
 
-# Major Challenges Solved
+## Main Features
 
-- Optimized server resource consumption during live sessions.
-- Improved video and audio performance.
-- Automatic lecture recording without affecting classroom performance.
-- Scalable architecture ready for future expansion.
-- Responsive experience across desktop and mobile devices.
-
----
-
-# Final Result
-
-The educational platform now includes a fully integrated virtual classroom system featuring:
-
-- Professional live streaming
-- Automatic lecture recording
-- Cloud-based storage
-- Responsive user interfaces
-- Stable backend architecture
-- High scalability for future growth
+- Create live classroom sessions
+- Join sessions securely
+- Teacher video streaming
+- Student participation
+- Real-time communication
+- Screen sharing
+- Live chat
+- Automatic recording
+- Cloud upload
+- Responsive design
+- Production-ready architecture
 
 ---
 
-# Screenshots
+## Performance Optimizations
 
-Project screenshots will be added here.
+Several optimizations were implemented to ensure stable performance under concurrent sessions:
+
+- Reduced server resource consumption
+- Optimized media streaming
+- Efficient recording pipeline
+- Scalable infrastructure
+- Clean and maintainable architecture
 
 ---
 
-# Confidentiality Notice
+## Project Gallery
 
-This repository is intended only to showcase the project's architecture, technologies, features, and implementation approach.
+Screenshots of the platform are available inside the **screenshots/** folder.
 
-The complete source code belongs to the client and cannot be published due to confidentiality and ownership agreements.
+---
+
+## Live Demo
+
+https://bakr-taher.com/
+
+---
+
+## Disclaimer
+
+This repository is intended to showcase the project implementation only.
+
+The original source code belongs to the client and cannot be shared publicly due to confidentiality agreements.
