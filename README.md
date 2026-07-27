@@ -102,11 +102,6 @@ Screenshots of the platform are available inside the **screenshots/** folder.
 
 ---
 
-## Live Demo
-
-https://bakr-taher.com/
-
----
 
 ## Disclaimer
 
